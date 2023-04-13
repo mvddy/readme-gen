@@ -100,5 +100,3 @@ inquirer
   })
   .then(() => console.log('README.md generated successfully!'))
   .catch((err) => console.error(err));
-
-
