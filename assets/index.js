@@ -1,6 +1,6 @@
 const fs = require('fs');
 const util = require('util');
-
+const inquirer = require("inquirer");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 function generateREADME(answers) {
@@ -37,7 +37,6 @@ ${answers.license}
 Contact me for questions at ${answers.email}. You can also find more of my work on my GitHub profile: https://github.com/${answers.username}.
 `;
 }
-const inquirer = import('inquirer');
 
 inquirer
   .prompt([
